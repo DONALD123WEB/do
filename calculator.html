@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <!-- Number Buttons -->
+    <div class="numbers">
+
+        <button onclick="appendNumber(0)">0</button>
+        <button onclick="appendNumber(3)">3</button>
+        <button onclick="appendNumber(6)">6</button>
+        <button onclick="appendNumber(9)">9</button>
+
+        <button onclick="appendNumber(1)">1</button>
+        <button onclick="appendNumber(4)">4</button>
+        <button onclick="appendNumber(7)">7</button>
+
+        <button class="equal" onclick="calculate()">=</button>
+
+        <button onclick="appendNumber(2)">2</button>
+        <button onclick="appendNumber(5)">5</button>
+        <button onclick="appendNumber(8)">8</button>
+
+    </div>
+
+    <!-- Display -->
+    <input type="text" id="display" readonly>
+
+    <!-- Operators -->
+    <div class="operators">
+        <button onclick="setOperator('+')">+</button>
+        <button onclick="setOperator('-')">-</button>
+        <button onclick="setOperator('/')">/</button>
+        <button onclick="setOperator('*')">×</button>
+    </div>
+
+    <button class="clear" onclick="clearDisplay()">Clear</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
